@@ -1,0 +1,449 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Tom Howes" />
+    <meta
+      name="description"
+      content="Tom Howes — born in the UK, grew up in Hong Kong and Singapore, now studying CS in Boston. Rock climber, keen cook, and travel enthusiast."
+    />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <title>Tom Howes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&family=Lato:wght@400;700&family=Playfair+Display:ital,wght@0,700;1,400&family=JetBrains+Mono:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="nav" aria-label="Main navigation">
+      <div class="nav__inner">
+        <a href="index.html" class="nav__logo">Tom<span>.</span></a>
+        <ul class="nav__links">
+          <li><a href="#life">Life</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="about.html">More</a></li>
+          <li><a href="ai.html">AI ✦</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="container">
+        <div class="hero__inner">
+          <div class="hero__text">
+            <span class="hero__tag">👋 hey, I'm Tom</span>
+            <h1 class="hero__name">Living between<br />worlds.</h1>
+            <p class="hero__desc">
+              Born in the UK, grew up in
+              <em>Hong Kong &amp; Singapore</em>, now studying CS in
+              <em>Boston</em>. When I'm not building ML projects I'm rock
+              climbing, cooking, or planning the next trip.
+            </p>
+            <div class="hero__links">
+              <a href="#life" class="btn btn--primary">See my life</a>
+              <a href="about.html" class="btn btn--outline">About me</a>
+            </div>
+          </div>
+          <div class="hero__image">
+            <img
+              src="images/travel-norway.jpeg"
+              alt="Tom Howes by a Norwegian fjord in Flåm"
+              class="hero__photo"
+            />
+            <p class="hero__photo-caption">Flåm, Norway ✈️</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Collage -->
+    <section class="collage" id="life">
+      <div class="container">
+        <span class="section-eyebrow">a life in pictures</span>
+        <h2 class="section-title">Travel, climbing &amp; cooking</h2>
+
+        <!-- Filter buttons -->
+        <div
+          class="collage__filters"
+          role="group"
+          aria-label="Filter photos by category"
+        >
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="travel">✈️ Travel</button>
+          <button class="filter-btn" data-filter="climbing">🧗 Climbing</button>
+          <button class="filter-btn" data-filter="cooking">🍳 Cooking</button>
+        </div>
+
+        <!-- Polaroid grid — add or remove articles here to change photos -->
+        <div class="collage__grid" id="collage-grid">
+          <!-- Travel -->
+          <article class="polaroid" data-category="travel">
+            <img
+              src="images/travel-colombia.jpeg"
+              alt="Tom in the Coffee Axis region near Pereira, Colombia"
+              class="polaroid__img"
+            />
+            <p class="polaroid__caption">Coffee Axis, Pereira 🇨🇴</p>
+          </article>
+
+          <article class="polaroid" data-category="travel">
+            <img
+              src="images/travel-morocco.jpeg"
+              alt="Tom at Aït Benhaddou kasbah in Morocco"
+              class="polaroid__img"
+            />
+            <p class="polaroid__caption">Aït Benhaddou, Morocco</p>
+          </article>
+
+          <article class="polaroid" data-category="travel">
+            <img
+              src="images/travel-norway.jpeg"
+              alt="Tom by the Flåm fjord in Norway"
+              class="polaroid__img"
+            />
+            <p class="polaroid__caption">Flåm fjord, Norway</p>
+          </article>
+
+          <!-- Climbing -->
+          <article class="polaroid" data-category="climbing">
+            <img
+              src="images/climb-1.png"
+              alt="Tom bouldering on an overhang at Rockspot Boston"
+              class="polaroid__img"
+            />
+            <p class="polaroid__caption">Rockspot, Boston</p>
+          </article>
+
+          <article class="polaroid" data-category="climbing">
+            <img
+              src="images/climb-2.png"
+              alt="Tom reaching for a hold on a blue bouldering wall"
+              class="polaroid__img"
+            />
+            <p class="polaroid__caption">Going for the send</p>
+          </article>
+
+          <article class="polaroid" data-category="climbing">
+            <img
+              src="images/climb-3.png"
+              alt="Tom climbing a steep bouldering problem"
+              class="polaroid__img"
+            />
+            <p class="polaroid__caption">That V4 won't climb itself</p>
+          </article>
+
+          <article class="polaroid" data-category="climbing">
+            <img
+              src="images/climb-4.png"
+              alt="Tom on a steep overhang at the climbing gym"
+              class="polaroid__img"
+            />
+            <p class="polaroid__caption">Rockspot overhang</p>
+          </article>
+
+          <article class="polaroid" data-category="climbing">
+            <img
+              src="images/climb-5.png"
+              alt="Tom climbing a difficult bouldering route"
+              class="polaroid__img"
+            />
+            <p class="polaroid__caption">Project mode</p>
+          </article>
+
+          <!-- Cooking -->
+          <article class="polaroid" data-category="cooking">
+            <img
+              src="images/cook-shakshuka.jpeg"
+              alt="A pan of shakshuka with poached eggs and buttered toast"
+              class="polaroid__img"
+            />
+            <p class="polaroid__caption">Shakshuka Sunday</p>
+          </article>
+
+          <article class="polaroid" data-category="cooking">
+            <img
+              src="images/cook-eggs.jpeg"
+              alt="A bowl of Chinese steamed eggs with chilli oil and coriander"
+              class="polaroid__img"
+            />
+            <p class="polaroid__caption">Chinese steamed eggs</p>
+          </article>
+
+          <article class="polaroid" data-category="cooking">
+            <img
+              src="images/cook-chowder.jpeg"
+              alt="A bowl of clam chowder with oyster crackers and a beer"
+              class="polaroid__img"
+            />
+            <p class="polaroid__caption">Clam chowder &amp; a cold one</p>
+          </article>
+
+          <article class="polaroid" data-category="cooking">
+            <img
+              src="images/cook-pizza.jpeg"
+              alt="A homemade flatbread pizza topped with arugula"
+              class="polaroid__img"
+            />
+            <p class="polaroid__caption">Arugula flatbread</p>
+          </article>
+
+          <article class="polaroid" data-category="cooking">
+            <img
+              src="images/cook-kale.jpeg"
+              alt="A large blue bowl of kale salad with chickpeas and croutons"
+              class="polaroid__img"
+            />
+            <p class="polaroid__caption">Kale salad situation</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lightbox — hidden until a polaroid is clicked -->
+    <div
+      id="lightbox"
+      class="lightbox"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Photo viewer"
+    >
+      <div class="lightbox__inner">
+        <button
+          id="lightbox-close"
+          class="lightbox__close"
+          aria-label="Close photo viewer"
+        >
+          &times;
+        </button>
+        <img id="lightbox-img" class="lightbox__img" src="" alt="" />
+        <p id="lightbox-caption" class="lightbox__caption"></p>
+      </div>
+    </div>
+
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <div class="container">
+        <span class="section-eyebrow">things I've built</span>
+        <h2 class="section-title">Projects</h2>
+        <div class="projects__grid">
+          <article class="project-card">
+            <div class="project-card__emoji">🎵</div>
+            <h3 class="project-card__title">DanceMusicGPT</h3>
+            <p class="project-card__desc">
+              An ongoing project to generate dance music MIDI using machine
+              learning. Training models to understand the structure of house and
+              techno — patterns, drops, transitions — and generate new sequences
+              that actually sound like real tracks.
+            </p>
+            <ul class="project-card__tags">
+              <li class="tag">Python</li>
+              <li class="tag">MIDI</li>
+              <li class="tag">ML</li>
+            </ul>
+            <div class="project-card__links">
+              <a
+                href="https://github.com/tom-howes"
+                target="_blank"
+                rel="noopener noreferrer"
+                >GitHub →</a
+              >
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__emoji">🤖</div>
+            <h3 class="project-card__title">Otto PM</h3>
+            <p class="project-card__desc">
+              AI-powered project management with repository-aware Q&amp;A built
+              on RAG. Connects to GitHub, indexes codebases using Vertex AI
+              Vector Search, and answers questions about your code in context.
+            </p>
+            <ul class="project-card__tags">
+              <li class="tag">Next.js</li>
+              <li class="tag">RAG</li>
+              <li class="tag">Vertex AI</li>
+              <li class="tag">GCP</li>
+            </ul>
+            <div class="project-card__links">
+              <a
+                href="https://github.com/otto-pm/otto"
+                target="_blank"
+                rel="noopener noreferrer"
+                >GitHub →</a
+              >
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__emoji">⚙️</div>
+            <h3 class="project-card__title">Distributed Kanban Board</h3>
+            <p class="project-card__desc">
+              Real-time collaborative Kanban board on a custom C++
+              primary-backup replication protocol. Automatic failover, vector
+              clock conflict resolution, and sub-200ms updates via Socket.io.
+            </p>
+            <ul class="project-card__tags">
+              <li class="tag">C++</li>
+              <li class="tag">Node.js</li>
+              <li class="tag">Socket.io</li>
+            </ul>
+            <div class="project-card__links">
+              <a
+                href="https://github.com/tom-howes/CS6650_Final_Project"
+                target="_blank"
+                rel="noopener noreferrer"
+                >GitHub →</a
+              >
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__emoji">🧠</div>
+            <h3 class="project-card__title">Sales Intelligence Tool</h3>
+            <p class="project-card__desc">
+              Pre-call research tool for sales engineers. Scrapes a prospect's
+              site, infers their tech stack, and generates a structured
+              discovery brief tailored to the stakeholder — CISO, VP Eng, or
+              CFO.
+            </p>
+            <ul class="project-card__tags">
+              <li class="tag">Python</li>
+              <li class="tag">Claude API</li>
+              <li class="tag">RAG</li>
+              <li class="tag">Streamlit</li>
+            </ul>
+            <div class="project-card__links">
+              <a
+                href="https://sales-intelligence-tool.streamlit.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                >↗ Live Demo</a
+              >
+              <a
+                href="https://github.com/tom-howes/Sales-Intelligence-Tool"
+                target="_blank"
+                rel="noopener noreferrer"
+                >GitHub →</a
+              >
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about__inner">
+          <div class="about__text">
+            <span class="section-eyebrow">a bit about me</span>
+            <h2 class="section-title">London → HK → Singapore → Boston</h2>
+            <p>
+              Growing up across three countries gave me an unusual mix of
+              perspectives. I spent my childhood in Hong Kong and Singapore
+              before moving back to the UK, where my family now lives in Bath.
+            </p>
+            <p>
+              I spent four and a half years in enterprise tech sales at
+              <strong>Darktrace</strong> and <strong>Panopto</strong> before
+              deciding I wanted to understand the technology I was selling from
+              the inside out. That led me to Northeastern's MS in Computer
+              Science — studying ML, distributed systems, and deep learning.
+            </p>
+            <p>
+              Outside of CS I boulder at Rockspot most weeks, cook ambitious
+              things on weeknights, and go back to the UK whenever I can to
+              watch Bath Rugby at the Rec.
+            </p>
+            <a
+              href="about.html"
+              class="btn btn--primary"
+              style="margin-top: 8px"
+              >Read more →</a
+            >
+          </div>
+          <div class="about__facts">
+            <div class="fact-card">
+              <p class="fact-card__label">Currently based</p>
+              <p class="fact-card__value">Boston, MA 🇺🇸</p>
+            </div>
+            <div class="fact-card">
+              <p class="fact-card__label">Grew up in</p>
+              <p class="fact-card__value">Hong Kong &amp; Singapore 🌏</p>
+            </div>
+            <div class="fact-card">
+              <p class="fact-card__label">Studying</p>
+              <p class="fact-card__value">MS Computer Science · Northeastern</p>
+            </div>
+            <div class="fact-card">
+              <p class="fact-card__label">Climbing since</p>
+              <p class="fact-card__value">2 years · primarily bouldering</p>
+            </div>
+            <div class="fact-card">
+              <p class="fact-card__label">Recent trips</p>
+              <p class="fact-card__value">Colombia · Morocco · Norway</p>
+            </div>
+            <div class="fact-card">
+              <p class="fact-card__label">Rugby team</p>
+              <p class="fact-card__value">Bath Rugby 🛁 (Finn Russell stan)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <span class="section-eyebrow">get in touch</span>
+        <h2 class="section-title">Say hello</h2>
+        <p class="contact__desc">
+          Always happy to chat about CS, climbing, food, or travel. Or if you're
+          hiring — my full portfolio is at tom-howes.github.io.
+        </p>
+        <div class="contact__links">
+          <a href="mailto:thomas.howes01@gmail.com" class="btn btn--light"
+            >Email me</a
+          >
+          <a
+            href="https://linkedin.com/in/tom-howes-1b1322164"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn--ghost"
+            >LinkedIn</a
+          >
+          <a
+            href="https://github.com/tom-howes"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn--ghost"
+            >GitHub</a
+          >
+          <a
+            href="https://tom-howes.github.io"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn--ghost"
+            >Full Portfolio ↗</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>© 2025 Tom Howes · Boston, MA</p>
+      </div>
+    </footer>
+
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
