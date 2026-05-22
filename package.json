@@ -1,0 +1,16 @@
+{
+  "name": "tom-howes-homepage",
+  "version": "1.0.0",
+  "description": "Personal homepage for Tom Howes",
+  "type": "module",
+  "scripts": {
+    "lint": "eslint .",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "prettier": "^3.2.5"
+  },
+  "author": "Tom Howes",
+  "license": "MIT"
+}
